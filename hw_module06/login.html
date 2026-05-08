@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-family:Arial, sans-serif;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+
+            padding:30px;
+            border-radius:10px;
+            width:400px;
+        }
+
+        .input-row{
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        .input-row label{
+            width:100px;
+            font-weight:bold;
+        }
+
+        .input-row input{
+            flex:1;
+            padding:10px;
+            border:1px solid;
+            border-radius:5px;
+        }
+
+        .submit-btn{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:5px;
+            color:black;
+            background-color: gray;
+            font-size:16px;
+            cursor:pointer;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .message{
+            text-align:center;
+            font-size:14px;
+            color: black;
+            min-height:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+
+        <div class="input-row">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div class="input-row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <input type="submit" value="Submit" class="submit-btn">
+
+        <p class="message">
+            
+        </p>
+
+    </form>
+
+</body>
+</html>
